@@ -1,0 +1,84 @@
+/* General styles */
+
+.tiles {
+	margin: 10px 0;
+}
+
+.tile {
+	margin-bottom: 20px;
+	background-color: #eee;
+
+	-webkit-transition: background-color 0.2s ease-in-out;
+	-moz-transition: background-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+
+}
+
+.tile:hover, .tile:focus {
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.tile a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.inner-tile {
+	padding: 120px 20px 5px 20px;
+}
+
+.inner-tile h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 150%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Tile backgrounds */
+.new-tenant {
+	background: #eee url(../img/icons/new-tenant.png) top center no-repeat;
+}
+
+.information {
+	background: #eee url(../img/icons/information.png) top center no-repeat;
+}
+
+.news {
+	background: #eee url(../img/icons/news.png) top center no-repeat;
+}
+
+.board {
+	background: #eee url(../img/icons/board.png) top center no-repeat;
+}
+
+.janitor {
+	background: #eee url(../img/icons/janitor.png) top center no-repeat;
+}
+
+.insurance {
+	background: #eee url(../img/icons/insurance.png) top center no-repeat;
+}
+
+.rules {
+	background: #eee url(../img/icons/rules.png) top center no-repeat;
+}
+
+.rental {
+	background: #eee url(../img/icons/rental.png) top center no-repeat;
+}
+
+#outer-footer {
+	margin-top: 20px;
+	background-color: #ccc;
+}
+
+#google-maps {
+	background: transparent url(../img/content/googlemaps.jpg) center center;
+	display: block;
+	width: 100%;
+	height: 200px;
+}
