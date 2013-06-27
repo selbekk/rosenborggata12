@@ -1,3 +1,15 @@
+/* Links */
+a {
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: red;
+}
+
+
 /* Tables */
 
 table {
@@ -70,6 +82,11 @@ section.content {
     margin: 0;
     font-weight: normal;
     font-style: italic;
+}
+
+.blog-post header h2 a,
+.blog-post header h3 a{
+    color: inherit;
 }
 
 .blog-post header .date {
