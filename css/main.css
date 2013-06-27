@@ -28,6 +28,10 @@ tbody tr {
     border-bottom: 1px solid #ccc;
 }
 
+tbody tr:last-of-type {
+    border-bottom: 0px;
+}
+
 /* Sidebar */
 
 aside.sidebar {
@@ -43,6 +47,33 @@ aside.sidebar {
 section.content {
     width: 65%;
     float: left;
+}
+
+/* Blog post */
+.blog-post {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.blog-post:last-of-type {
+    border-bottom: 0px;
+}
+
+.blog-post header h2 {
+    margin: 0 0 10px 0;
+    line-height: 50%;
+}
+
+.blog-post header h3 {
+    font-size: 110%;
+    color: #999;
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.blog-post header .date {
+    text-align: right;
 }
 
 /* General styles */
