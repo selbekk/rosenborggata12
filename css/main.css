@@ -53,6 +53,20 @@ aside.sidebar {
     padding: 10px;
 }
 
+aside.sidebar h2 {
+    font-size: 180%;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+aside.sidebar h3 {
+    font-size: 120%;
+    line-height: 120%;
+    margin: 0;
+    text-transform: uppercase;
+    color: #666;
+}
+
 
 /* Main content area */
 
