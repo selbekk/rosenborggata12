@@ -1,3 +1,50 @@
+/* Tables */
+
+table {
+    width: auto;
+    margin: 10px auto;
+    width: 100%;
+}
+
+thead tr {
+    border-bottom: 2px solid #666;
+
+}
+
+thead th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+}
+
+td {
+    padding: 8px 10px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Sidebar */
+
+aside.sidebar {
+    width: 30%;
+    float: right;
+    background-color: #eee;
+    padding: 10px;
+}
+
+
+/* Main content area */
+
+section.content {
+    width: 65%;
+    float: left;
+}
+
 /* General styles */
 
 .tiles {
@@ -74,6 +121,7 @@
 #outer-footer {
 	margin-top: 20px;
 	background-color: #ccc;
+    border-top: 1px solid #eee;
 }
 
 #google-maps {
