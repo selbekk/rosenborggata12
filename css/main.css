@@ -1,3 +1,7 @@
+/****************************/
+/*      General styles      */
+/****************************/
+
 /* Links */
 a {
     -webkit-transition: color 0.2s linear;
@@ -9,9 +13,7 @@ a:hover, a:focus {
     color: red;
 }
 
-
 /* Tables */
-
 table {
     width: auto;
     margin: 10px auto;
@@ -20,7 +22,6 @@ table {
 
 thead tr {
     border-bottom: 2px solid #666;
-
 }
 
 thead th {
@@ -44,36 +45,98 @@ tbody tr:last-of-type {
     border-bottom: 0px;
 }
 
-/* Sidebar */
+/****************************/
+/*          Header          */
+/****************************/
 
-aside.sidebar {
-    width: 30%;
-    float: right;
-    background-color: #eee;
-    padding: 10px;
+.page-header {
 }
 
-aside.sidebar h2 {
-    font-size: 180%;
+/* Logo and general */
+.page-header h1 {
+    text-indent: -9999px;
     margin: 0;
-    text-transform: uppercase;
+    background: url(../img/content/rg12-logo.png) no-repeat top center;
+    background-size: contain;
+    height: 80px;
 }
 
-aside.sidebar h3 {
-    font-size: 120%;
-    line-height: 120%;
-    margin: 0;
-    text-transform: uppercase;
+.page-header p {
+    text-align: center;
     color: #666;
+    font-size: 120%;
 }
 
 
-/* Main content area */
-
-section.content {
-    width: 65%;
-    float: left;
+/* Menu */
+.nav-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
 }
+
+.nav-button {
+    background-color: #333;
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    padding-top: 20px;
+}
+
+.nav {
+    width: 100%;
+    display: none;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav li a {
+    color: white;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+    color: black;
+}
+
+/* Search */
+.search-wrapper {
+    margin: 0 10px;
+}
+
+/****************************/
+/*          Footer          */
+/****************************/
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 8px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+}
+
+/****************************/
+/*            Blog          */
+/****************************/
 
 /* Blog post */
 .blog-post {
@@ -107,27 +170,32 @@ section.content {
     text-align: right;
 }
 
-/* General styles */
-
-.tiles {
-	margin: 10px 0;
+/* Sidebar */
+aside.sidebar {
+    width: 30%;
+    float: right;
+    background-color: #eee;
+    padding: 10px;
 }
+
+aside.sidebar h2 {
+    font-size: 180%;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+aside.sidebar h3 {
+    font-size: 120%;
+    line-height: 120%;
+    margin: 0;
+    text-transform: uppercase;
+    color: #666;
+}
+
+/* General styles */
 
 .tile {
 	margin-bottom: 20px;
-	background-color: #eee;
-
-	-webkit-transition: background-color 0.2s ease-in-out;
-	-moz-transition: background-color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out;
-	-o-transition: background-color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out;
-
-}
-
-.tile:hover, .tile:focus {
-	background-color: #ccc;
-	cursor: pointer;
 }
 
 .tile a {
@@ -135,60 +203,120 @@ section.content {
 	text-decoration: none;
 }
 
-.inner-tile {
-	padding: 120px 20px 5px 20px;
+.tile .inner-tile {
+	padding: 120px 0 5px;
+    background-color: #eee;
+    margin: 0;
+
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.tile:hover .inner-tile, .tile:focus .inner-tile{
+    background-color: #ccc;
+    cursor: pointer;
 }
 
 .inner-tile h2 {
 	margin: 0;
 	padding: 0;
-	font-size: 150%;
+	font-size: 100%;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 /* Tile backgrounds */
 .new-tenant {
-	background: #eee url(../img/icons/new-tenant.png) top center no-repeat;
+	background: url(../img/icons/new-tenant.png) top center no-repeat;
 }
 
 .information {
-	background: #eee url(../img/icons/information.png) top center no-repeat;
+	background: url(../img/icons/information.png) top center no-repeat;
 }
 
 .news {
-	background: #eee url(../img/icons/news.png) top center no-repeat;
+	background: url(../img/icons/news.png) top center no-repeat;
 }
 
 .board {
-	background: #eee url(../img/icons/board.png) top center no-repeat;
+	background: url(../img/icons/board.png) top center no-repeat;
 }
 
 .janitor {
-	background: #eee url(../img/icons/janitor.png) top center no-repeat;
+	background: url(../img/icons/janitor.png) top center no-repeat;
 }
 
 .insurance {
-	background: #eee url(../img/icons/insurance.png) top center no-repeat;
+	background: transparent url(../img/icons/insurance.png) top center no-repeat;
 }
 
 .rules {
-	background: #eee url(../img/icons/rules.png) top center no-repeat;
+	background: transparent url(../img/icons/rules.png) top center no-repeat;
 }
 
 .rental {
-	background: #eee url(../img/icons/rental.png) top center no-repeat;
+	background: transparent url(../img/icons/rental.png) top center no-repeat;
 }
 
+/* Footer styles */
 #outer-footer {
-	margin-top: 20px;
 	background-color: #ccc;
     border-top: 1px solid #eee;
 }
 
-#google-maps {
-	background: transparent url(../img/content/googlemaps.jpg) center center;
-	display: block;
-	width: 100%;
-	height: 200px;
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .inner-tile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .inner-tile h2 {
+        font-size: 110%;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .inner-tile h2 {
+        font-size: 150%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* iPad portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+}
+
+/* iPad landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* iPhone 5 */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+}
+
+/* iPhone 2-4S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
 }
