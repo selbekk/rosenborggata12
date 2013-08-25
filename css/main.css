@@ -46,6 +46,35 @@ tbody tr:last-of-type {
 }
 
 /****************************/
+/*           Tabs           */
+/****************************/
+
+.tab {
+    background-color: #333;
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: white;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    z-index: 999;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.tab:hover {
+    padding-top: 20px;
+}
+
+.tab.hidden {
+    display: none !important;
+}
+
+/****************************/
 /*          Header          */
 /****************************/
 
@@ -76,23 +105,11 @@ tbody tr:last-of-type {
     width: 100%;
 }
 
-.nav-button {
-    background-color: #333;
-    padding: 10px;
-    margin-right: 10px;
-    color: white;
-    display: inline-block;
+.nav-tab {
     float: right;
-    cursor: pointer;
-
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
-.nav-button:hover {
+.nav-tab:hover {
     padding-top: 20px;
 }
 
@@ -116,6 +133,19 @@ tbody tr:last-of-type {
 .search-wrapper {
     margin: 0 10px;
 }
+
+.search-wrapper.full-width {
+    width: 100%;
+}
+
+.search-tab {
+    display: none;
+    background-color: #333;
+    color: white;
+    float: left;
+    margin-left: 10px;
+}
+
 
 /****************************/
 /*          Footer          */
@@ -276,6 +306,23 @@ aside.sidebar h3 {
 
     .inner-tile h2 {
         font-size: 110%;
+    }
+
+    .search-wrapper {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 50%;
+    }
+
+    .search-tab {
+        display: inline-block;
+    }
+
+    .search-field-wrapper {
+        background-color: #333;
+        padding: 10px 5px;
+        display: none;
     }
 }
 

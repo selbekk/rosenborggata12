@@ -26,16 +26,21 @@
                     <a href="#">Kontakt</a>
                 </li>
             </ul>
-            <div class="nav-button">MENY</div>
+            <div class="tab nav-tab">MENY</div>
         </nav>
         <div class="page-header">
             <h1>Rosenborggata 12</h1>
             <p>Informasjon, nyheter og kontaktinformasjon for beboere i borettslaget Rosenborggata 12.</p>
         </div>
         <div class="search-wrapper">
-            <form>
-                <input type="text" class="form-control" placeholder="Hva leter du etter?">
-            </form>
+            <div class="search-field-wrapper">
+                <form>
+                    <input type="text" class="form-control" placeholder="Hva leter du etter?">
+                </form>
+            </div>
+            <div class="tab search-tab visible-sm">
+                <div class="glyphicon glyphicon-search"></div>
+            </div>
             <div class="clearfix"></div>
         </div>
     </header>
@@ -167,12 +172,24 @@
 	<script src="js/bootstrap.js"></script>
     <script>
         $(document).ready(function() {
+            var nav = $('.nav');
+            var navTab = $('.nav-tab');
+            var search = $('.search-wrapper');
+            var searchTab = $('.search-tab');
+
             var toggleMenu = function() {
-                var nav = $('.nav');
                 nav.slideToggle(200);
+                searchTab.toggleClass('hidden');
             };
 
-            $('.nav-button').click(toggleMenu);
+            var toggleSearch = function() {
+                search.find('.search-field-wrapper').slideToggle(200);
+                search.toggleClass('full-width');
+                navTab.toggleClass('hidden');
+            };
+
+            navTab.click(toggleMenu);
+            searchTab.click(toggleSearch);
         });
     </script>
 </body>
