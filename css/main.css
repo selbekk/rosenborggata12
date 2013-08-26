@@ -52,12 +52,13 @@ tbody tr:last-of-type {
 .tab {
     background-color: #333;
     padding: 10px 15px;
+    margin-left: 10px;
     margin-right: 10px;
     color: white;
     display: inline-block;
     float: right;
     cursor: pointer;
-    z-index: 999;
+    z-index: 1;
 
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -106,7 +107,10 @@ tbody tr:last-of-type {
 }
 
 .nav-tab {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
 }
 
 .nav-tab:hover {
@@ -132,6 +136,10 @@ tbody tr:last-of-type {
 /* Search */
 .search-wrapper {
     margin: 0 10px;
+}
+
+.search-field-wrapper {
+    margin-bottom: 20px;
 }
 
 .search-wrapper.full-width {
@@ -312,11 +320,14 @@ aside.sidebar h3 {
         position: absolute;
         top: 0;
         left: -10px;
-        width: 50%;
+        width: 100%;
     }
 
     .search-tab {
-        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 10px;
     }
 
     .search-field-wrapper {

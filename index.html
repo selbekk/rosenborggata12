@@ -10,6 +10,9 @@
     <link href="css/main.css" rel="stylesheet" media="screen">
 </head>
 <body>
+    <div class="tab search-tab visible-sm glyphicon glyphicon-search">
+    </div>
+    <div class="tab nav-tab">MENY</div>
     <header>
         <nav class="nav-wrapper">
             <ul class="nav">
@@ -26,7 +29,6 @@
                     <a href="#">Kontakt</a>
                 </li>
             </ul>
-            <div class="tab nav-tab">MENY</div>
         </nav>
         <div class="page-header">
             <h1>Rosenborggata 12</h1>
@@ -38,10 +40,6 @@
                     <input type="text" class="form-control" placeholder="Hva leter du etter?">
                 </form>
             </div>
-            <div class="tab search-tab visible-sm">
-                <div class="glyphicon glyphicon-search"></div>
-            </div>
-            <div class="clearfix"></div>
         </div>
     </header>
 
@@ -170,27 +168,6 @@
 	<!-- Javascript includes -->
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
-    <script>
-        $(document).ready(function() {
-            var nav = $('.nav');
-            var navTab = $('.nav-tab');
-            var search = $('.search-wrapper');
-            var searchTab = $('.search-tab');
-
-            var toggleMenu = function() {
-                nav.slideToggle(200);
-                searchTab.toggleClass('hidden');
-            };
-
-            var toggleSearch = function() {
-                search.find('.search-field-wrapper').slideToggle(200);
-                search.toggleClass('full-width');
-                navTab.toggleClass('hidden');
-            };
-
-            navTab.click(toggleMenu);
-            searchTab.click(toggleSearch);
-        });
-    </script>
+    <script src="js/views/frontpage-view.js"></script>
 </body>
 </html>
