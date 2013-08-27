@@ -15,7 +15,7 @@
         var toggleSearch = function() {
             navTab.toggleClass('hidden');
             searchTab.toggleClass('hidden');
-            search.find('.search-field-wrapper').slideToggle(200);
+            search.fadeToggle(200);
 
             if( search.is(':visible') ) {
                 searchField.focus();
@@ -25,12 +25,19 @@
         var hideSearch = function() {
             navTab.toggleClass('hidden');
             searchTab.toggleClass('hidden');
-            search.find('.search-field-wrapper').slideToggle(200);
+            search.fadeOut(200);
+        };
+
+        var hideSearchKeyboard = function(e) {
+            if(e.keyCode === 27) /* escape */ {
+                searchField.blur();
+            }
         }
 
         navTab.on('click', toggleMenu);
         searchTab.on('click', toggleSearch);
         searchField.on('blur', hideSearch);
+        searchField.on('keyup', hideSearchKeyboard);
     };
 
     window.view = window.view || {};
