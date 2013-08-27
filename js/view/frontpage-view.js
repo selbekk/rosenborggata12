@@ -35,26 +35,37 @@
             }
         }
 
-        navTab.on('click', toggleMenu);
-        navClose.on('click', toggleMenu);
-        searchTab.on('click', toggleSearch);
-        searchField.on('blur', hideSearch);
-        searchField.on('keyup', hideSearchKeyboard);
+        var initSlideJs = function() {
+            $(".slides").slidesjs({
+                width: 600,
+                height: 200,
+                navigation: {
+                    active: false
+                },
+                play: {
+                    auto: true,
+                    active: false
+                },
+                pagination: {
+                    active: false
+                }
+            });
+        };
 
-        $(".slides").slidesjs({
-            width: 600,
-            height: 200,
-            navigation: {
-                active: false
-            },
-            play: {
-                auto: true,
-                active: false
-            },
-            pagination: {
-                active: false
-            }
-        });
+        var initEvents = function() {
+            navTab.on('click', toggleMenu);
+            navClose.on('click', toggleMenu);
+            searchTab.on('click', toggleSearch);
+            searchField.on('blur', hideSearch);
+            searchField.on('keyup', hideSearchKeyboard);
+        };
+
+        var init = function() {
+            initEvents();
+            initSlideJs();
+        }
+
+        $(document).ready(init);
     };
 
     window.view = window.view || {};

@@ -365,9 +365,32 @@ aside.sidebar h3 {
 /****************************/
 /*          Footer          */
 /****************************/
-#outer-footer {
+
+.outer-footer {
 	background-color: #ccc;
     border-top: 1px solid #eee;
+}
+
+/****************************/
+/*       Google Maps        */
+/****************************/
+
+.maps-container {
+    height: 200px;
+    width: 100%;
+    margin-right: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.maps-container iframe,
+.maps-container object,
+.maps-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /****************************/
