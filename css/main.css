@@ -147,6 +147,7 @@ tbody tr:last-of-type {
 
 .search-wrapper {
     position: fixed;
+    z-index: 11;
     top: 0;
     left: 0;
     width: 100%;
@@ -175,6 +176,13 @@ tbody tr:last-of-type {
 .search-field-wrapper input:focus {
     box-shadow: none;
     border-color: white;
+}
+
+/****************************/
+/*        Slideshow         */
+/****************************/
+.slides {
+    display: none;
 }
 
 /****************************/
