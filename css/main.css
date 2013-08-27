@@ -77,6 +77,7 @@ tbody tr:last-of-type {
 /****************************/
 
 .page-header {
+
 }
 
 /* Logo and general */
@@ -135,7 +136,7 @@ tbody tr:last-of-type {
     position: absolute;
     top: 5px;
     right: 10px;
-    font-size: 300%;
+    font-size: 250%;
     color: white;
     cursor: pointer;
 }
@@ -361,11 +362,17 @@ aside.sidebar h3 {
 	background: transparent url(../img/icons/rental.png) top center no-repeat;
 }
 
-/* Footer styles */
+/****************************/
+/*          Footer          */
+/****************************/
 #outer-footer {
 	background-color: #ccc;
     border-top: 1px solid #eee;
 }
+
+/****************************/
+/*       Media queries      */
+/****************************/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -393,6 +400,10 @@ aside.sidebar h3 {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .page-header {
+        margin-bottom: 0;
+    }
+
     .inner-tile h2 {
         font-size: 150%;
     }
@@ -405,6 +416,48 @@ aside.sidebar h3 {
     .search-field-wrapper input {
         font-size: 400%;
         font-weight: bold;
+    }
+
+    .nav-tab {
+        display: none;
+    }
+
+    .nav-wrapper {
+        position: inherit;
+        top: auto;
+        left: auto;
+        display: block;
+        z-index: auto;
+        height: auto;
+        background-color: transparent;
+        width: auto;
+    }
+
+    .nav {
+        width: auto;
+        background: #333;
+        text-align: center;
+    }
+
+    .nav li {
+        display: inline-block;
+        width: auto;
+    }
+
+    .nav li a {
+        margin: 0;
+        border: 0;
+        padding: 5px 20px;
+
+        text-transform: none;
+    }
+
+    .nav-close {
+        display: none;
+    }
+
+    .nav-wrapper h3 {
+        display: none;
     }
 }
 
