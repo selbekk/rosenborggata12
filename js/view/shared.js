@@ -1,19 +1,17 @@
 (function() {
-    var GoogleMaps = function() {
-        var myOptions = {
-            center: new google.maps.LatLng(37.0625, -95.677068),
-            zoom: 18,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            disableDefaultUI: true
-        };
 
-        var init = function() {
-            var map = new google.maps.Map($(".maps-container"), myOptions);
-        }
+    var map;
+    var init = function() {
+      var mapOptions = {
+                center: new google.maps.LatLng(59.92652, 10.7256),
+                zoom: 16,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                disableDefaultUI: true
+            };
+      map = new google.maps.Map(document.getElementById('maps-container'),
+          mapOptions);
+    }
 
-        $(document).ready(init);
-    };
+    google.maps.event.addDomListener(window, 'load', init);
 
-    window.rg12 = window.rg12 || {};
-    window.rg12.maps = GoogleMaps();
 })();

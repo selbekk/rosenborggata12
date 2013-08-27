@@ -65,7 +65,7 @@
             initSlideJs();
         }
 
-        $(document).ready(init);
+        init();
     };
 
     window.view = window.view || {};
