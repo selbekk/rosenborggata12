@@ -214,8 +214,23 @@ tbody tr:last-of-type {
 /****************************/
 /*        Slideshow         */
 /****************************/
+
 .slides {
     display: none;
+}
+
+/****************************/
+/*        Highlights        */
+/****************************/
+
+.highlighted {
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.highlighted img {
+    margin-right: 10px;
 }
 
 /****************************/
