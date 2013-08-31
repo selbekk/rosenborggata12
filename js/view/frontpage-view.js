@@ -37,8 +37,8 @@
 
         var initSlideJs = function() {
             $(".slides").slidesjs({
-                width: 600,
-                height: 200,
+                width: 900,
+                height: 350,
                 navigation: {
                     active: false
                 },
