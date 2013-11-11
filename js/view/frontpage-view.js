@@ -5,6 +5,7 @@
         var navClose = $('.nav-close');
         var search = $('.search-wrapper');
         var searchTab = $('.search-tab');
+        var searchTrigger = $('.search-trigger');
         var searchField = $('.search-wrapper input');
 
         var toggleMenu = function() {
@@ -55,7 +56,7 @@
         var initEvents = function() {
             navTab.on('click', toggleMenu);
             navClose.on('click', toggleMenu);
-            searchTab.on('click', toggleSearch);
+            searchTrigger.on('click', toggleSearch);
             searchField.on('blur', hideSearch);
             searchField.on('keyup', hideSearchKeyboard);
         };
